@@ -22,7 +22,7 @@ async function init() {
     )`);
 }
 
-app.get('/', (req, res) => res.json({ servicio: 'Sistema Moderno (Node/Express)', estado: 'ok' }));
+app.get('/', (req, res) => res.json({ servicio: 'Sistema Moderno v2 (Node/Express)', estado: 'ok' }));
 
 app.get('/api/tareas', async (req, res) => {
   const r = await pool.query('SELECT * FROM tareas ORDER BY id DESC');
